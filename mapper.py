@@ -1,11 +1,11 @@
-
+#!/usr/bin/python
 #In this example we will find the TOTAL SALES/ STORE hence we need to pick these two columns from the given data set.
 #So we need to decide what field to pick as (key, value) pair. In this case Key will be StoreName and Value will be Cost.
 
 import sys
 import StringIO
 
-def mapper:
+def mapper():
     #read standard input line by line
     for line in sys.stdin:
        # strip off extra whitespace, split on tab and put the data in an array
@@ -13,7 +13,7 @@ def mapper:
 
        #some defensive programming to chech if any 
        #line does not contain exactly 6 fields
-       if len(data)!=6
+       if len(data)!=6:
           continue
 
 
@@ -41,6 +41,6 @@ def main():
 
 
 if __name__ == "__main__":
-main()
+    main()
  	
    
