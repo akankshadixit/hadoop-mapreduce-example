@@ -6,7 +6,7 @@ Use following script to download the test data.
 
 ```./download_data.sh```
 
-##Input Data
+## Input Data
 
 Each mapper will process the input data and process the lines given to it. First ten lines of the input file using command `head data/purchases.txt` Each line have 6 values separated with `\t`:
 
