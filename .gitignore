@@ -1,0 +1,9 @@
+#ignore downloaded data
+
+*.gz
+*_log
+*.txt
+
+*~
+
+/data/*
