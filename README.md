@@ -23,3 +23,23 @@ Each mapper will process the input data and process the lines given to it. First
 2012-01-01	09:00	Fort Worth	Toys	213.88	Visa
 
 ```
+
+## Mapper 
+
+The job of the mapper is to convert each received line from inpu to a **(key,value)** pair as defined i.e **(store, cost)**. 
+Run code without Hadoop on first ten rows of input file `head -n 10 data/purchases.txt | python2 mapper.py`:
+
+```
+San Jose	214.05
+Fort Worth	153.57
+San Diego	66.08
+Pittsburgh	493.51
+Omaha	235.63
+Stockton	247.18
+Austin	379.6
+New York	296.8
+Corpus Christi	25.38
+Fort Worth	213.88
+```
+
+
