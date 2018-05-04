@@ -42,4 +42,30 @@ Corpus Christi	25.38
 Fort Worth	213.88
 ```
 
+## Reducer 
+
+The reducer recieves key-value pairs in the format shown in mapper output. These key-value pairs are compiled in such a manner that for a unique key all the values are grouped together.There is no shuffle and sort bewtween mapper and reducer, so it will not work the same as with Hadoop `head -n 10 data/purchases.txt | python2 mapper.py | python2 reducer.py`:
+
+```
+San Jose 	214.05
+San Jose 	214.05
+Fort Worth 	153.57
+Fort Worth 	153.57
+San Diego 	66.08
+San Diego 	66.08
+Pittsburgh 	493.51
+Pittsburgh 	493.51
+Omaha 	235.63
+Omaha 	235.63
+Stockton 	247.18
+Stockton 	247.18
+Austin 	379.6
+Austin 	379.6
+New York 	296.8
+New York 	296.8
+Corpus Christi 	25.38
+Corpus Christi 	25.38
+Fort Worth 	213.88
+
+```
 
